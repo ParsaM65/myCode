@@ -49,13 +49,12 @@ namespace Calculator
         {
             // ask user for operator
             Console.Write("Enter an operator: ");
-            char op = (char)Console.Read(); 
-
+            char op = char.Parse(Console.ReadLine()); 
             // loop until valid input enterd
             while (op != '+' && op != '-' && op != '*' && op != '/')
             {
                 Console.Write("Try again: ");
-                op = (char)Console.Read();
+                op = char.Parse(Console.ReadLine()); 
             }
 
             return op; 
