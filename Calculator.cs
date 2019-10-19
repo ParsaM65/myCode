@@ -5,41 +5,41 @@ namespace Calculator
     class Program
     {
 
-        public static void add(int x, int y)
+        public static void Add(int x, int y)
         {
             Console.WriteLine($"{x} + {y} = {x + y}");
         }
     
-        public static void subtract(int x, int y)
+        public static void Subtract(int x, int y)
         {
             Console.WriteLine($"{x} - {y} = {x - y}"); 
         }
 
-        public static void multiply(int x, int y)
+        public static void Multiply(int x, int y)
         {
             Console.WriteLine($"{x} * {y} = {x * y}"); 
         }
 
-        public static void divide(int x, int y)
+        public static void Divide(int x, int y)
         {
             Console.WriteLine($"{x} / {y} = {x / y}");
         }
 
-        public static void operate(int x, int y, char op)
+        public static void Operate(int x, int y, char op)
         {
             switch(op)
             {
                 case '+':
-                    add(x, y);
+                    Add(x, y);
                     break;
                 case '-':
-                    subtract(x, y);
+                    Subtract(x, y);
                     break;
                 case '*':
-                    multiply(x, y);
+                    Multiply (x, y);
                     break;
                 case '/':
-                    divide(x, y);
+                    Divide(x, y);
                     break; 
             }
         }
@@ -75,7 +75,7 @@ namespace Calculator
 
             int y = GetNum();
 
-            operate(x, y, op); 
+            Operate(x, y, op); 
         }
     }
 }
